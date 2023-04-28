@@ -1,0 +1,5 @@
+Copied straight from the TI MSPM0 SDK keeping folder structure.
+
+Renamed the DPL files from X_nortos -> X_zephyr.  
+
+SDK is currently based on version 1.00.00.04.
