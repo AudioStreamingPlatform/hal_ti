@@ -1,6 +1,5 @@
-add_subdirectory(source/ti/devices)
-
 if(CONFIG_HAS_MSPM0SDK)
+  add_subdirectory(source/ti/devices)
   zephyr_include_directories(
     .
     source
