@@ -11,6 +11,7 @@ zephyr_include_directories(
 zephyr_library()
 zephyr_library_compile_definitions(${COMPILER})
 
+zephyr_library_sources_ifdef(CONFIG_SOC_MSPM0G1106 m0p/startup_system_files/gcc/startup_mspm0g1106_gcc.c)
 zephyr_library_sources_ifdef(CONFIG_SOC_MSPM0G3506 m0p/startup_system_files/gcc/startup_mspm0g3506_gcc.c)
 zephyr_library_sources_ifdef(CONFIG_SOC_MSPM0G3507 m0p/startup_system_files/gcc/startup_mspm0g3507_gcc.c)
 
