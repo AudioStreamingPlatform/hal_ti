@@ -19,5 +19,6 @@ if(CONFIG_HAS_MSPM0SDK)
     source/ti/driverlib/dl_vref.c
     source/ti/driverlib/dl_mcan.c
     source/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.c
+    source/ti/driverlib/dl_timer.c
     )
 endif()
