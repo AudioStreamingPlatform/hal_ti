@@ -257,7 +257,8 @@ void DL_Timer_initCaptureCombinedMode(
     GPTIMER_Regs *gptimer, DL_Timer_CaptureCombinedConfig *config)
 {
     Timer_Input_Chan_Config captConfig;
-    Timer_Input_Pair_Chan_Config captPairConfig;
+    /* NOTE: just to get rid of the Werror; unitialized */
+    Timer_Input_Pair_Chan_Config captPairConfig = {};
 
     DL_Timer_getInChanConfig(config->inputChan, &captConfig);
     DL_Timer_getInChanPairConfig(config->inputChan, &captPairConfig);
