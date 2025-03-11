@@ -1,4 +1,4 @@
-if(CONFIG_HAS_MSPM0SDK)
+if(CONFIG_HAS_MSPM0_SDK)
   add_subdirectory(source/ti/devices)
   zephyr_include_directories(
     .
@@ -21,5 +21,6 @@ if(CONFIG_HAS_MSPM0SDK)
     source/ti/driverlib/dl_spi.c
     source/ti/driverlib/m0p/sysctl/dl_sysctl_mspm0g1x0x_g3x0x.c
     source/ti/driverlib/dl_timer.c
+    source/ti/driverlib/dl_flashctl.c
     )
 endif()
